@@ -5,8 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-// routes
-
+// Routes
 app.get("/", (req, res) => {
   res.send("Hello Node API");
 });
@@ -82,7 +81,7 @@ app.delete("/products/:id", async (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://emirkaansaricam:Vairo123*@nodeapi.tnitueq.mongodb.net/NodeAPI"
+    "mongodb+srv://username:password*@nodeapi.tnitueq.mongodb.net/NodeAPI"
   )
   .then(() => {
     console.log("Connected to MongoDB");
